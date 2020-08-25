@@ -4,7 +4,9 @@ pipeline {
 
     stages {
         stage('Source') {
+            steps {
 	    git 'http://github.com/sarnepalli/jenkins-test'
+		}
         }
         stage('Test') {
             steps {
